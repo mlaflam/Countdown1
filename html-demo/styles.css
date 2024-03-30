@@ -1,10 +1,10 @@
-.sub-heading h3 {
+h3.sub-heading {
     text-decoration-line: underline;
     margin-bottom: 20px;
 }
 
 .picture {
-    width: 300px;
+    width: 400px;
     border-radius: 15px;
     border: solid;
     border-width: 3px;
@@ -18,10 +18,29 @@
 }
 
 .pic-description {
-    width: 800px;
+    width: 400px;
 }
+
 
 .list {
     font-size: 18px;
     line-height: 25px;
+}
+
+.container {
+    display: flex;
+}
+
+.sub-container {
+    padding: 15px;
+}
+
+.link {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: green;
+}
+
+.link:hover {
+    color: rgb(3, 78, 3);
 }
