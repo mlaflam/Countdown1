@@ -103,6 +103,23 @@ sumUp(7);
 
 /* (7) Write an arrow function that converts the temperature from Celsius to Fahrenheit and then tells
     me what I should wear accordingly */
+  
+const weatherCheck = (temp) => {
+  newTemp = ((9 / 5) * temp) + 32;
+  console.log(newTemp);
+  if (newTemp < 32) {
+    console.log("Wear something warm.");
+  }
+  else if (32 <= newTemp < 50) {
+    console.log("It's a bit chilly out, make sure to bring a sweater.");
+  }
+  else {
+    console.log("Just wear what you want!");
+  }
+}
+
+weatherCheck(3);
+
 
 /* (8) Write a function that takes in an array and prints out the amount of truthy values in that array
   using .forEach() */
