@@ -1,0 +1,27 @@
+.sub-heading h3 {
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+}
+
+.picture {
+    width: 300px;
+    border-radius: 15px;
+    border: solid;
+    border-width: 3px;
+    border-color: rgb(19, 113, 10);
+    box-shadow: 0 0 8px #00000067;
+    ;
+}
+
+#basic-text {
+    margin-bottom: 10px;
+}
+
+.pic-description {
+    width: 800px;
+}
+
+.list {
+    font-size: 18px;
+    line-height: 25px;
+}
