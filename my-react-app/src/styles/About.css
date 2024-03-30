@@ -1,0 +1,50 @@
+h3.sub-heading {
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+}
+
+.picture {
+    width: 400px;
+    border-radius: 15px;
+    border: solid;
+    border-width: 3px;
+    border-color: rgb(19, 113, 10);
+    box-shadow: 0 0 8px #00000067;
+    ;
+}
+
+#basic-text {
+    margin-bottom: 10px;
+}
+
+.pic-description {
+    width: 400px;
+}
+
+
+.list {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.container {
+    display: flex;
+}
+
+.sub-container {
+    padding: 15px;
+}
+
+.link {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: green;
+}
+
+.link:hover {
+    color: rgb(3, 78, 3);
+}
+
+.hello {
+    font-size: 14px;
+}

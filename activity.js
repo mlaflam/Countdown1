@@ -108,23 +108,36 @@ const weatherCheck = (temp) => {
   newTemp = ((9 / 5) * temp) + 32;
   console.log(newTemp);
   if (newTemp < 32) {
-    console.log("Wear something warm.");
+    console.log("It's cold as heck! Wear something warm.");
   }
-  else if (32 <= newTemp < 50) {
+  else if (newTemp >= 32 && newTemp < 50) {
     console.log("It's a bit chilly out, make sure to bring a sweater.");
+  }
+  else if (newTemp >= 50 && newTemp < 70) {
+    console.log("It's isn't too warm or too cold. Just wear something basic.");
+  }
+  else if (newTemp >= 70) {
+    console.log("It's getting hot. No pants or long sleeves for you.");
   }
   else {
     console.log("Just wear what you want!");
   }
 }
 
-weatherCheck(3);
+weatherCheck(-1);
+weatherCheck(20);
+weatherCheck(30);
 
 
 /* (8) Write a function that takes in an array and prints out the amount of truthy values in that array
   using .forEach() */
 
 const exampleArray = ["Hello, world!", 8, null, false, "", "0", -22];
+
+const truthy = (arr) => {
+  arr.forEach((elem) => console.log({ title, author }));
+  //num >= 0 ? "Positive" : "Negative";
+}
 
 /* (9) Using the map function and arrow syntax, return an array of object that contain a fullName field
   and an averageGrade field representing the letter grade that corresponds to their GPA */
