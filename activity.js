@@ -2,9 +2,10 @@
 
 /* Do all of these using proper ES6 syntax
 Using the following array of objects,
-(1) Write an arrow function that adds a new entry to bookList
-(2) Write an arrow function that removes a specific book from the bookList
-(3) Write an arrow function that lists out all the books or all the authors in the book list */
+(1) Write an arrow function that adds a new entry to bookList  */
+
+/* (2) Write an arrow function that removes a specific book from the bookList */
+/* (3) Write an arrow function that lists out all the books or all the authors in the book list */
 
 const bookList = [
   { title: "Don Quixote", author: "Miguel de Cervantes" },
@@ -13,17 +14,90 @@ const bookList = [
   { title: "Moby Dick", author: "Herman Melville" },
 ];
 
+const addNewEntry = (title, author) => {
+    bookList.push({ title: title, author: author });
+}
+
+/* (1) Write an arrow function that adds a new entry to bookList  */
+addNewEntry("Hunger Games", "Suzanne Collins")
+
+console.log(bookList);
+
+/* (2) Write an arrow function that removes a specific book from the bookList */
+const removeEntry = (title, author) => {
+    for (let i = 0; i < bookList.length; i++) {
+        if (bookList[i].title === title && bookList[i].author === author) {
+            bookList.splice(i, 1);
+        }
+} 
+}
+
+removeEntry("Don Quixote", "Miguel de Cervantes")
+
+console.log(bookList);
+
+/* (3) Write an arrow function that lists out all the books or all the authors in the book list */
+const displayEntries = () => {
+    bookList.forEach(({ title, author }) => console.log({ title, author }));
+}
+
+displayEntries();
+
+
 /* Intermediate Challenge */
 
 /* (4) Write a one-line arrow function that takes in a number and returns a string stating whether the
   number is positive or negative using a ternary operator (assume the number will never be zero) */
 
+const numberType = (num) => num >= 0 ? "Positive" : "Negative";
+
+console.log(numberType(3));
+console.log(numberType(0));
+console.log(numberType(-3));
+
 /* (5) Write a switch statement for a 'day' variable that prints out something based off of what day of
   the week it is i.e. if it's Monday, print "good luck" or wednesday print "hump day" or friday print "party" */
+let day = "Sunday"; //you can switch this to get diff messages
+
+switch (day) {
+  case "Monday":
+    console.log("Good luck for the week!");
+    break;
+  case "Tuesday":
+    console.log("This day will bring you fortune.");
+    break;
+  case "Wednesday":
+    console.log("Hump Day!");
+    break;
+  case "Thursday":
+    console.log("Keep going!");
+    break;
+  case "Friday":
+    console.log("It's almost the weekend!");
+    break;
+  case "Saturday":
+    console.log("Go sleep in you deserve it!");
+    break;
+  case "Sunday":
+    console.log("Shoot it's time to do work...");
+    break;
+  default:
+    console.log("I don't know what day it is.");
+}
+  
 
 /* (6) Write an arrow function that takes in a number, and uses a for loop to return the sum of every
   number from 1 up to that number
   ex. sumUp(7) = 28 */
+
+const sumUp = (num) => {
+  let result = 0;
+  for (let i = 0; i < num+1; i++) {
+    result = result + i;
+  }
+  console.log(result);
+}
+sumUp(7);
 
 /* Harder Challenge */
 
